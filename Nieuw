@@ -1,0 +1,24 @@
+SenerBarber/
+├─ app/
+│  ├─ layout.tsx        # Root layout (dark mode, fonts)
+│  ├─ page.tsx          # Home page (Status interface)
+│  └─ globals.css       # Tailwind + base styles
+│
+├─ components/
+│  ├─ StatusHero.tsx    # Hero: status + WhatsApp + hours
+│  └─ PricesList.tsx    # Stille prijzenlijst (onder de fold)
+│
+├─ public/
+│  ├─ video/
+│  │  └─ hero.mp4       # Barber video (background, muted)
+│  └─ images/
+│     └─ fallback.jpg   # Fallback background image
+│
+├─ lib/
+│  └─ utils.ts          # shadcn utils (cn helper)
+│
+├─ tailwind.config.ts
+├─ postcss.config.js
+├─ next.config.js
+├─ package.json
+└─ README.md
