@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: black; }
+      .icon { fill: white; }
+    }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: white; }
+      .icon { fill: black; }
+    }
+  </style>
+
+  <rect class="bg" width="100" height="100"/>
+  <text class="icon" x="50%" y="55%" text-anchor="middle" font-size="72">💈</text>
+</svg>
