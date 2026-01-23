@@ -209,60 +209,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      {/* ================= FOOTER ================= */}
-      <footer className="py-6 border-t border-white/10">
-  <div className="flex flex-col items-center gap-4 text-sm text-white/60">
-
-    {/* Socials */}
-    <div className="flex justify-center gap-5">
-      <a
-        href="https://www.facebook.com/KAPSALONsener"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Facebook pagina Barber Sener"
-        className="opacity-70 hover:opacity-100 transition"
-      >
-        <Facebook size={22} />
-      </a>
-
-      <a
-        href="https://www.instagram.com/the_barber_sener/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram profiel Barber Sener"
-        className="opacity-70 hover:opacity-100 transition"
-      >
-        <Instagram size={22} />
-      </a>
-
-      <a
-        href="https://github.com/Dj-Shortcut/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="GitHub profiel Dj-Shortcut"
-        className="opacity-40 hover:opacity-70 transition"
-      >
-        <Github size={20} />
-      </a>
-    </div>
-
-    {/* Address / Maps */}
-    <a
-      href="https://www.google.com/maps/search/?api=1&query=Beverstraat+22,+9400+Ninove"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 hover:text-white transition"
-      aria-label="Open adres in Google Maps"
-    >
-      <MapPin size={16} />
-      <span>Beverstraat 22, 9400 Ninove</span>
-    </a>
-
-  </div>
-</footer>
-
-
-    </>
+      </>
   )
 }
