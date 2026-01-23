@@ -211,63 +211,58 @@ export default function Page() {
       </section>
 
       {/* ================= FOOTER ================= */}
-      <footer className="relative bg-black py-10">
-        <div className="flex justify-center gap-8">
-          {/* MAPS */}
-          <a
-            href={MAPS_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="text-white/60 hover:text-white transition"
-            aria-label="Route naar Barber Sener"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="h-6 w-6"
-            >
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
-            </svg>
-          </a>
+      <footer className="py-6 border-t border-white/10">
+  <div className="flex flex-col items-center gap-4 text-sm text-white/60">
 
-          {/* FACEBOOK */}
-          <a
-            href="https://www.facebook.com/KAPSALONsener"
-            target="_blank"
-            rel="noreferrer"
-            className="text-white/60 hover:text-white transition"
-            aria-label="Facebook Barber Sener"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="h-6 w-6"
-            >
-              <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z" />
-            </svg>
-          </a>
+    {/* Socials */}
+    <div className="flex justify-center gap-5">
+      <a
+        href="https://www.facebook.com/KAPSALONsener"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook pagina Barber Sener"
+        className="opacity-70 hover:opacity-100 transition"
+      >
+        <Facebook size={22} />
+      </a>
 
-          {/* GITHUB */}
-          <a
-            href="https://github.com/Dj-Shortcut/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-white/60 hover:text-white transition"
-            aria-label="GitHub Dj-Shortcut"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="h-6 w-6"
-            >
-              <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.11 3.29 9.44 7.86 10.97.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.53-1.34-1.29-1.7-1.29-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 2.9-.39c.99 0 1.99.13 2.9.39 2.21-1.5 3.18-1.19 3.18-1.19.63 1.59.23 2.76.11 3.05.74.81 1.19 1.85 1.19 3.11 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.08.8 2.18 0 1.57-.01 2.84-.01 3.22 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.74 18.27.5 12 .5z" />
-            </svg>
-          </a>
-        </div>
-      </footer>
+      <a
+        href="https://www.instagram.com/the_barber_sener/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram profiel Barber Sener"
+        className="opacity-70 hover:opacity-100 transition"
+      >
+        <Instagram size={22} />
+      </a>
+
+      <a
+        href="https://github.com/Dj-Shortcut/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub profiel Dj-Shortcut"
+        className="opacity-40 hover:opacity-70 transition"
+      >
+        <Github size={20} />
+      </a>
+    </div>
+
+    {/* Address / Maps */}
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Beverstraat+22,+9400+Ninove"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 hover:text-white transition"
+      aria-label="Open adres in Google Maps"
+    >
+      <MapPin size={16} />
+      <span>Beverstraat 22, 9400 Ninove</span>
+    </a>
+
+  </div>
+</footer>
+
+
     </>
   )
 }

@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Michroma } from "next/font/google";
 import Script from "next/script";
+import { Facebook, Instagram, Github, MapPin } from 'lucide-react'
 
 const michroma = Michroma({
   subsets: ["latin"],
