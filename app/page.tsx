@@ -13,19 +13,21 @@ const OPEN_DAYS = [2, 3, 4, 5, 6] // di → za
 const OPEN_HOUR = 9
 const CLOSE_HOUR = 19
 
-// Belgische feestdagen 2026
-const HOLIDAYS_2026 = [
-  '2026-01-01',
-  '2026-04-06',
-  '2026-05-01',
-  '2026-05-14',
-  '2026-05-25',
-  '2026-07-21',
-  '2026-08-15',
-  '2026-11-01',
-  '2026-11-11',
-  '2026-12-25',
-]
+// Belgische feestdagen per jaar
+const HOLIDAYS_BY_YEAR: Record<number, string[]> = {
+  2026: [
+    '2026-01-01',
+    '2026-04-06',
+    '2026-05-01',
+    '2026-05-14',
+    '2026-05-25',
+    '2026-07-21',
+    '2026-08-15',
+    '2026-11-01',
+    '2026-11-11',
+    '2026-12-25',
+  ],
+}
 
 /* ================= HELPERS ================= */
 
@@ -34,9 +36,14 @@ function getStatus(now: Date) {
   const hour = now.getHours()
   const minutes = now.getMinutes()
   const time = hour + minutes / 60
-  const dateKey = now.toISOString().slice(0, 10)
+  const dateKey = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate()
+  ).toLocaleDateString('sv-SE')
+  const holidays = HOLIDAYS_BY_YEAR[now.getFullYear()] ?? []
 
-  if (HOLIDAYS_2026.includes(dateKey)) {
+  if (holidays.includes(dateKey)) {
     return { label: 'Gesloten', wait: null }
   }
 
