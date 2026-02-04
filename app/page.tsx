@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import PricesList from '@/components/PricesList'
+import PricesList from '../components/PricesList'
 
 /* ================= CONSTANTS ================= */
 
